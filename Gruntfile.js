@@ -132,6 +132,9 @@ module.exports = function (grunt) {
                         '<%= conf.web %>/js/jasmine-jsreporter.js',
                         '<%= conf.spec %>/helpers/*.js'
                     ],
+                    styles: [
+                        '<%= conf.web %>/css/dc.css'
+                    ],
                     version: '2.0.0',
                     outfile: '<%= conf.spec %>/index.html',
                     keepRunner: true
@@ -263,6 +266,7 @@ module.exports = function (grunt) {
                             'node_modules/d3/d3.js',
                             'node_modules/crossfilter2/crossfilter.js',
                             'node_modules/grunt-saucelabs/examples/jasmine/lib/jasmine-jsreporter/jasmine-jsreporter.js',
+                            'node_modules/file-saver/FileSaver.js',
                             'test/env-data.js'
                         ],
                         dest: '<%= conf.web %>/js/'
